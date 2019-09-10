@@ -1,0 +1,6 @@
+ItemNum,ItemName,ItemColor,PrepProcess,ItemToOpen,ItemCommand,ItemAutoEnteredCommand
+1,SearchString,CYAN,1,O:\Programs\Powershell\DATAManipulation\SearchFileForString\SearchFilesforString.psm1,,SearchFilesForString -FileLocation O:\DATASources\ServiceNowCSVs -OFFSET PROD -FileFilter *.csv -SearchString 
+2,SearchPDFs,CYAN,1,O:\Programs\Powershell\DATAManipulation\SearchPDFs\SearchPDFs.psm1,,"SearchPDFs -GUI YES -PDFsPath ""O:\DATASources\RunBooks\Accenture"" -Keywords "
+3,Reconcile Application,CYAN,1,O:\Programs\Powershell\DATAManipulation\SearchFileAndUpdateExcel\SearchFileAndUpdateExcel.ps1,,"SearchCSV_UpdateExcel -CSVFile ""O:\DATASources\ServiceNowCSVs\cmdb_ci_server.csv"" -UpdateItems (Import-Csv ""O:\Programs\Powershell\DATAManipulation\UpdateItems.csv"").UpdateItems  -EXCELFile "
+4,CUSTOM,RED,0,,"$GlobaL:WindowTitle = Read-Host ""What name do you want for this Window?  >>  """,
+5,SCOM Investigator,Green,1,O:\Programs\Powershell\SCOM\SCOMInvestigator\SCOMInvestigator.ps1,,F5
